@@ -42,8 +42,12 @@ public class JustAppWelcomeWindow : Gtk.ApplicationWindow {
         Object (application: app, title: "JustApp");
         this.set_default_size (800, 600);
 
-        var label1 = new Gtk.Label("Йохохо и бутылка рома!");
-        this.add(label1);    
+        var label1 = new Gtk.Label (
+            "Fifteen men on the dead man's chest—\n" +
+            "Yo-ho-ho, and a bottle of rum!\n" +
+            "Drink and the devil had done for the rest\n" +
+            "Yo-ho-ho, and a bottle of rum!");
+        this.add(label1);
 
         this.show_all();
     }
